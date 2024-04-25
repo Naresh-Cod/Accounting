@@ -1,0 +1,16 @@
+<!-- yourappname/templates/order_detail.html -->
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+  <h2>Order Details</h2>
+  <p>ID: {{ order.id }}</p>
+  <p>Customer: {{ order.customer }}</p>
+  
+  <p>Products: {% for product in order.products.all %}
+    {{ product.name }}{% if not forloop.last %}, {% endif %}
+  {% endfor %}</p>
+    <p>Order Date: {{ order.order_date }}</p>
+  <p>Total Amount: {{ order.total_amount }}</p>
+  <!-- Add other order details here -->
+  
+{% endblock %}

@@ -1,0 +1,104 @@
+.option-17 {
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 20px;
+  font-weight: 500;
+}
+.info-icon {
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+.info-pane,
+.list7 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) 0 0;
+}
+.list7 {
+  align-self: stretch;
+  border-radius: var(--br-9xs);
+  flex-direction: row;
+  padding: var(--padding-9xs) var(--padding-3xs);
+  gap: var(--gap-5xs);
+}
+.option-18 {
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 20px;
+  font-weight: 500;
+}
+.pencil-fiiled-icon {
+  width: 16px;
+  height: 16px;
+  position: relative;
+}
+.list8,
+.pencil-fiiled-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) 0 0;
+}
+.list8 {
+  align-self: stretch;
+  border-radius: var(--br-9xs);
+  flex-direction: row;
+  padding: var(--padding-9xs) var(--padding-3xs);
+  gap: var(--gap-5xs);
+}
+.option-19 {
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 20px;
+  font-weight: 500;
+}
+.trash-filled-icon1 {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.trash-filled-wrapper {
+  flex-direction: column;
+  padding: var(--padding-11xs) 0 0;
+}
+.actions,
+.list9,
+.trash-filled-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.list9 {
+  align-self: stretch;
+  border-radius: var(--br-9xs);
+  flex-direction: row;
+  padding: var(--padding-9xs) var(--padding-3xs);
+  gap: var(--gap-5xs);
+  color: var(--red-500);
+}
+.actions {
+  width: 100%;
+  position: relative;
+  border-radius: var(--br-7xs);
+  background-color: var(--white);
+  box-shadow: var(--light-shadow-m);
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--padding-5xs) var(--padding-7xs);
+  box-sizing: border-box;
+  gap: var(--gap-12xs);
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--subtitle-s2-size);
+  color: var(--blue-500);
+  font-family: var(--subtitle-s2);
+}

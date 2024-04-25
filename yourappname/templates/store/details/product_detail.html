@@ -1,0 +1,15 @@
+<!-- yourappname/templates/product_detail.html -->
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+  <h2>Product Details</h2>
+  <p>Name: {{ product.name }}</p>
+  <p>Description: {{ product.description }}</p>
+
+  <p>Price: {{ product.price }}</p>
+  <p>Quantity in Stock: {{ product.quantity_in_stock }}</p>
+  <p>Supplier:: {{ product.supplier }}</p>
+  <p>GST Rate:: {{ product.gst_rate }}</p>
+
+  <!-- Add other product details here -->
+{% endblock %}

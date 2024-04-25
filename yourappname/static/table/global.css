@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+.popup-overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  inset: 0;
+}
+
+:root {
+  /* fonts */
+  --subtitle-s2: Inter;
+
+  /* font sizes */
+  --subtitle-s2-size: 14px;
+  --caption-c2-size: 12px;
+  --overline-size: 11px;
+
+  /* Colors */
+  --color-whitesmoke-100: #f9fafc;
+  --gray-0: #f7f9fc;
+  --blue-0: #ebf0fa;
+  --gray-50: #e9edf5;
+  --blue-500: #2264e6;
+  --gray-700: #464f60;
+  --white: #fff;
+  --gray-500: #687182;
+  --gray-600: #5a6376;
+  --indigo-0: #f0f1fa;
+  --color-ghostwhite-100: rgba(245, 247, 252, 0.75);
+  --color-ghostwhite-200: rgba(244, 247, 252, 0.75);
+  --indigo-500: #4f5aed;
+  --gray-900: #171c26;
+  --green-500: #14804a;
+  --green-0: #e1fcef;
+  --red-500: #d12953;
+  --red-0: #faf0f3;
+  --gray-300: #a1a9b8;
+
+  /* Gaps */
+  --gap-xl: 20px;
+  --gap-6xs: 7px;
+  --gap-10xs: 3px;
+  --gap-11xl: 30px;
+  --gap-11xs: 2px;
+  --gap-lgi: 19px;
+  --gap-mini: 15px;
+  --gap-xl-7: 20.7px;
+  --gap-21xl: 40px;
+  --gap-5xs: 8px;
+  --gap-9xs: 4px;
+  --gap-12xs: 1px;
+
+  /* Paddings */
+  --padding-21xl: 40px;
+  --padding-xl: 20px;
+  --padding-5xs: 8px;
+  --padding-6xs: 7px;
+  --padding-xs: 12px;
+  --padding-31xl: 50px;
+  --padding-3xs: 10px;
+  --padding-6xl: 25px;
+  --padding-12xs: 1px;
+  --padding-4xs: 9px;
+  --padding-smi: 13px;
+  --padding-7xs: 6px;
+  --padding-33xl: 52px;
+  --padding-11xs: 2px;
+  --padding-9xs: 4px;
+  --padding-lg: 18px;
+  --padding-8xl: 27px;
+  --padding-7xl: 26px;
+  --padding-4xl: 23px;
+  --padding-10xl: 29px;
+  --padding-base: 16px;
+
+  /* Border radiuses */
+  --br-xs: 12px;
+  --br-9xs: 4px;
+  --br-5xs: 8px;
+  --br-3xs: 10px;
+  --br-12xs: 1px;
+  --br-7xs: 6px;
+
+  /* Effects */
+  --light-shadow-s: 0px 0px 0px 1px rgba(152, 161, 178, 0.1),
+    0px 1px 4px rgba(69, 75, 87, 0.12), 0px 0px 2px rgba(0, 0, 0, 0.08);
+  --sd-button-default: 0px 1px 1px rgba(0, 0, 0, 0.1),
+    0px 0px 0px 1px rgba(70, 79, 96, 0.16), 0px 2px 5px rgba(89, 96, 120, 0.1);
+  --sd-button-inactive: 0px 0px 0px 1px rgba(70, 79, 96, 0.24);
+  --light-shadow-m: 0px 0px 0px 1px rgba(152, 161, 179, 0.1),
+    0px 15px 35px -5px rgba(17, 24, 38, 0.2), 0px 5px 15px rgba(0, 0, 0, 0.08);
+}

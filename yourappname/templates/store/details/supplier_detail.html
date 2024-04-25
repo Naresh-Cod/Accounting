@@ -1,0 +1,11 @@
+<!-- supplier_detail.html -->
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+  <h1>Supplier Details</h1>
+  <p><strong>Name:</strong> {{ supplier.name }}</p>
+  <p><strong>Email:</strong> {{ supplier.email }}</p>
+  <p><strong>Phone Number:</strong> {{ supplier.phone_number }}</p>
+  <p><strong>Address:</strong> {{ supplier.address }}</p>
+  <!-- Add other relevant fields as needed -->
+{% endblock %}

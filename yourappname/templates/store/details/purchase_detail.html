@@ -1,0 +1,14 @@
+<!-- yourappname/templates/purchase_detail.html -->
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+  <h2>Purchase Details</h2>
+  <p>ID: {{ purchase.id }}</p>
+  <p>Product: {{ purchase.product }}</p>
+  <p>Supplier: {{ purchase.supplier }}</p>
+
+  <p>Date: {{ purchase.purchase_date }}</p>
+  <p>quantity: {{ purchase.quantity_purchased }}</p>
+  <p>Price: {{ purchase.purchase_price }}</p>
+  <!-- Add other purchase details here -->
+{% endblock %}

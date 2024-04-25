@@ -1,0 +1,84 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'dist/css/global.css' %}">
+    <link rel="stylesheet" href="{% static 'dist/css/login.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
+</head>
+<body>
+    <div class="log-in">
+        <img class="ellipse-child-icon" alt="" src="{% static 'dist/css/public/ellipse-child@2x.png' %}" />
+
+        <div class="form">
+            <div class="log-in-wrapper">
+                <h1 class="log-in1">Log In</h1>
+            </div>
+            <div class="frame-parent">
+                <div class="following-frame-group-parent">
+                    <form class="following-frame-group" method="post">
+                        {% csrf_token %}
+                        
+                        <div class="frame-group">
+                            <div class="group-parent">
+                                <img class="group-icon" alt="" src="{% static 'dist/css/public/group.svg' %}" />
+                                {{ form.username }}
+                            </div>
+                            <div class="following4">{{ form.email.errors }}</div>
+
+
+                            <div class="group-group">
+                                <img class="group-icon1" alt="" src="{% static 'dist/css/public/group-1.svg' %}" />
+                                {{ form.password }}
+                                
+                            </div>
+                            <div class="following4">{{ form.password.errors }}</div>
+
+                        </div>
+                        <button class="line-and-following-label" type="submit">
+                            <div class="following2">Log In</div>
+                        </button>
+                    </form>    
+                </div>
+               
+            </div>
+            <div class="two-following-frames">
+                <div class="comma-vector-frame">
+                    <div class="following7">Don’t have an account?</div>
+                    <div class="following8" id="followingText8"><a href="{% url 'signup' %}">Sign Up</a></div>
+                </div>
+            </div>
+        </div>
+        <!-- Username 
+        <div class="blank-frame">
+            <div class="vector-quote">
+                <div class="asterisks-vector">
+                    <img class="icon" loading="lazy" alt="" src="{% static 'dist/css/public/lo.svg' %}" />
+                    <h1 class="the-future-belongs-container">
+                        <span>The future belongs to those who </span>
+                        <span class="believe">believe</span>
+                        <span> in the </span>
+                        <span class="beauty-of-their">beauty of their dreams</span>
+                        <span>.</span>
+                    </h1>
+                </div>
+                <h2 class="eleanor-roosevelt">- Eleanor Roosevelt</h2>
+            </div>
+        </div> 
+    -->
+    </div>
+
+    <script>
+        var followingText8 = document.getElementById("followingText8");
+        if (followingText8) {
+            followingText8.addEventListener("click", function (e) {
+                window.location.href = "{% url 'signup' %}";
+            });
+        }
+    </script>
+</body>
+</html>

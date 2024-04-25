@@ -1,0 +1,109 @@
+<!-- yourappname/templates/signup.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{% static 'dist/css/sign-up.css' %}">
+    <link rel="stylesheet" href="{% static 'dist/css/global.css' %}">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    />
+</head>
+<body>
+    <div class="sign-up">
+        <main class="frame-parent1">
+            <img class="unsplash9ickpsq9g5q-icon" alt="" src="{% static 'dist/css/public/unsplash9ickpsq9g5q@2x.png' %}"/>
+            <div class="sign-up-frame">
+                <!--
+                <div class="frame-container">
+                    <div class="parent">
+                        <img class="icon1" loading="lazy" alt="" src="{% static 'dist/css/public/lo.svg' %}"/>
+
+                        <h1 class="the-only-way-container">
+                            <span>
+                                <span>The only way to</span>
+                                <span class="span"> </span>
+                            </span>
+                            <span class="do-great-work">
+                                <span>do great work</span>
+                                <span> </span>
+                            </span>
+                            <span>
+                                <span>is to</span>
+                            </span>
+                            <span class="love-what-you-do">
+                                <span> </span>
+                                <span>love what you do.</span>
+                            </span>
+                        </h1>
+                    </div>
+                    <h2 class="steve-jobs">- Steve Jobs</h2>
+                </div>
+                -->
+            </div>
+            <div class="form1">
+                <div class="sign-up-text">
+                    <h1 class="sign-up1">Sign Up</h1>
+                </div>
+                <form class="l-parent" method="post">
+                    {% csrf_token %}
+
+                    <div class="l">
+                        <div class="xl">
+                            <div class="need-an-account">
+                                <!-- Username -->
+                                <div class="masukkan-ke-keranjang-saya">
+                                    <img class="group-icon3" alt="" src="{% static 'dist/css/public/icon_user.svg' %}" />
+                                    {{ form.username }}
+                                </div>
+                                <div class="following13">{{ form.username.errors }}</div>
+
+
+                                <div class="masukkan-ke-keranjang-saya">
+                                    <img class="group-icon2" alt="" src="{% static 'dist/css/public/group.svg' %}" />
+                                    {{ form.email }}
+                                </div>
+                                <div class="following13">{{ form.email.errors }}</div>
+
+                                <div class="sweatshirt-dengan-tudung">
+                                    <img class="group-icon3" alt="" src="{% static 'dist/css/public/group-1.svg' %}" />
+                                    {{ form.password1 }}
+                                </div>
+                                <div class="following13">{{ form.password1.errors }}</div>
+
+                                <div class="frame-split">
+                                    <img class="group-icon4" alt="" src="{% static 'dist/css/public/group-1.svg' %}" />
+                                    {{ form.password2 }}
+                                </div>
+                                <div class="following13">{{ form.password2.errors }}</div>
+                            </div>                          
+                        </div>
+                    </div>
+                    <button class="cari" type="submit">
+                        <div class="following12">Sign Up</div>
+                    </button>
+                </form>
+                <div class="two-following-frames">
+                    <div class="comma-vector-frame">
+                        <div class="following15">Already have an account?</div>
+                        <div class="following17" id="followingText8"><a href="{% url 'login' %}">Log In</a></div>
+                    </div>
+                </div>     
+            </div>
+        </main>
+    </div>
+
+    <script>
+        var followingText8 = document.getElementById("followingText8");
+        if (followingText8) {
+            followingText8.addEventListener("click", function (e) {
+                window.location.href = "./log-in.html";
+            });
+        }
+    </script>
+</body>
+</html>

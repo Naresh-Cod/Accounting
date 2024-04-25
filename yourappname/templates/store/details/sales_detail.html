@@ -1,0 +1,14 @@
+<!-- yourappname/templates/sales_detail.html -->
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+  <h2>Sales Details</h2>
+  <p>ID: {{ sales.id }}</p>
+  <p>Product: {{ sales.product }}</p>
+  <p>Customer: {{ sales.customer }}</p>
+
+  <p>Sale date: {{ sales.sale_date }}</p>
+  <p>Quantity sold: {{ sales.quantity_sold }}</p>
+  <p>Sale price: {{ sales.sale_price }}</p>
+  <!-- Add other sales details here -->
+{% endblock %}
