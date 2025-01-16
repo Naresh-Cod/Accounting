@@ -14,7 +14,7 @@ The Accounting Management System is a web-based application built with Django to
 ✅ Multi-Currency Support – Manage accounts in different currencies
 ✅ Data Export & Backup – Export reports in CSV, Excel, or PDF formats
 
-##Technology Stack
+## Technology Stack
 
     Backend: Django (Python)
     Frontend: HTML, CSS, JavaScript, Bootstrap
@@ -22,7 +22,7 @@ The Accounting Management System is a web-based application built with Django to
     APIs: REST API for seamless integrations
     Deployment: Docker, AWS/Heroku
 
-Installation
+## Installation
 1. Clone the Repository
 
 git clone https://github.com/yourusername/accounting-management-system.git
@@ -54,7 +54,7 @@ Usage
     Generate invoices and track payments
     View analytics and reports
 
-Contributing
+## Contributing
 
 Contributions are welcome! Feel free to fork the repo and submit a pull request.
 License
